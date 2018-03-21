@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000"
+    tools:context="com.example.ashna.movieguide.MainActivity">
+
+    <LinearLayout
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/ibBack"
+            android:backgroundTint="#000"
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+        <ImageButton
+            android:id="@+id/ibMore"
+            android:backgroundTint="#000"
+            android:src="@drawable/ic_view_headline_white_24dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etMovie"
+            android:textColor="#ffffff"
+            android:hint="Search a movie"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="italic"
+            android:textColorHint="#ffffff"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/ibSearch"
+            android:backgroundTint="#000"
+            android:src="@drawable/ic_search_white_24dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:background="#000"
+        android:id="@+id/flFragContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

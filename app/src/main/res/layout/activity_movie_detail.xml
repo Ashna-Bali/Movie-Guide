@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000"
+    tools:context="com.example.ashna.movieguide.activities.MovieDetail">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#000">
+
+        <ImageView
+            android:id="@+id/ivBackdrop"
+            android:src="@drawable/loading"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:backgroundTint="#000"
+            android:layout_width="match_parent"
+            android:layout_height="230dp" />
+
+        <TextView
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/tvMovieTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="18sp"
+            android:text="TITLE"
+            android:gravity="center"/>
+
+        <com.github.ivbaranov.mfb.MaterialFavoriteButton
+            android:id="@+id/btnFavorite"
+            android:layout_gravity="end|right"
+            android:layout_marginRight="15dp"
+            android:adjustViewBounds="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="Release Date"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:fontFamily="sans-serif-smallcaps"/>
+
+        <TextView
+            android:id="@+id/tvReleaseDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:paddingBottom="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:textSize="15sp"
+            android:text="2017-11-01"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="Rating"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:fontFamily="sans-serif-smallcaps"/>
+
+        <TextView
+            android:id="@+id/tvRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:paddingBottom="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:textSize="15sp"
+            android:text="10"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="Overview"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:fontFamily="sans-serif-smallcaps"/>
+
+        <TextView
+            android:id="@+id/tvOverview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:paddingBottom="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:textSize="15sp"
+            android:text="bla bla bla bla bla"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvTrailers"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            tools:listitem="@layout/list_item_trailer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>
